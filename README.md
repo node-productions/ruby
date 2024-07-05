@@ -6,7 +6,7 @@ This is a [remark](https://github.com/remarkjs/remark) plugin rebuilt based on r
 
 ```sh
 # Of course you can use npm, yarn or other tools.
-bun add @nplab/remark-ruby
+bun add @nplabo/remark-ruby
 ```
 
 ## Usage
@@ -32,7 +32,6 @@ const md2html = (md) => {
 
 const markdown = `
 {双方向散乱分布関数|そうほうこうさんらんぶんぷかんすう}
-|双方向散乱分布関数《そうほうこうさんらんぶんぷかんすう》
 `;
 
 console.log(md2html(markdown));
@@ -43,10 +42,7 @@ The result is:
 ```html
 <!-- formatted HTML -->
 <p>
-  <ruby
-    >双方向散乱分布関数<rp>《</rp><rt>そうほうこうさんらんぶんぷかんすう</rt
-    ><rp>》</rp></ruby
-  >
+  <ruby>双方向散乱分布関数<rp>《</rp><rt>そうほうこうさんらんぶんぷかんすう</rt><rp>》</rp></ruby>
 </p>
 ```
 
