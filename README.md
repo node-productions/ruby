@@ -1,4 +1,4 @@
-# remark-nodepro-ruby
+# @nplab/remark-ruby
 
 This is a [remark](https://github.com/remarkjs/remark) plugin rebuilt based on remark-denden-ruby(https://www.npmjs.com/package/remark-denden-ruby).
 
@@ -6,7 +6,7 @@ This is a [remark](https://github.com/remarkjs/remark) plugin rebuilt based on r
 
 ```sh
 # Of course you can use npm, yarn or other tools.
-bun add remark-nodepro-ruby
+bun add @nplab/remark-ruby
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
-import remarkRuby from "remark-nodepro-ruby";
+import remarkRuby from "@nplab/remark-ruby";
 
 const md2html = (md) => {
   const result = unified()
@@ -58,4 +58,4 @@ Escaping like `\{Info\|Warning\}` is not supported due to **technical reason**. 
 
 Copyright (c) 2022 fabon.
 
-Released under the [MIT License](/LICENSE).
+Released under the MIT License.
