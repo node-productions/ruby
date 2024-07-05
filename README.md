@@ -1,4 +1,4 @@
-# @nplab/remark-ruby
+# @nplabo/remark-ruby
 
 This is a [remark](https://github.com/remarkjs/remark) plugin rebuilt based on remark-denden-ruby(https://www.npmjs.com/package/remark-denden-ruby).
 
@@ -18,7 +18,7 @@ import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
-import remarkRuby from "@nplab/remark-ruby";
+import remarkRuby from "@nplabo/remark-ruby";
 
 const md2html = (md) => {
   const result = unified()
