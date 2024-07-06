@@ -1,6 +1,6 @@
 {
   "name": "@nplabo/remark-ruby",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "This is a remark plugin rebuilt based on remark-denden-ruby(https://www.npmjs.com/package/remark-denden-ruby).",
   "type": "module",
   "exports": "./index.js",
