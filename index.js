@@ -8,8 +8,8 @@ import { u } from "unist-builder";
 function scanRuby(str) {
   let match;
   let index = 0;
-  const rubyRegex =
-    /(?:\{([^\|\}]+)\|([^\|\}]+)(?:\|[^\{\|\}]+)*\})|(?:(?:｜)?([^｜《》\s]+)《([^《》]+)》)/g;
+  const regex =
+    /(?:\{([^\|\}]+)\|([^\|\}]+)(?:\|[^\{\|\}]+)*\})|(?:\|([^\|《》]+)《([^《》]+)》)/g;
   const result = [];
 
   while ((match = regex.exec(str)) !== null) {

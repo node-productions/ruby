@@ -3,7 +3,7 @@
 This is a [remark](https://github.com/remarkjs/remark) plugin rebuilt based on remark-denden-ruby(https://www.npmjs.com/package/remark-denden-ruby).
 
 > [!NOTE]
-> version 0.0.6:
+> version 0.0.7:
 > Aozora Bunko style ruby notation (in part) is now available.
 
 ## Installation
