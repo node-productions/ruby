@@ -2,6 +2,10 @@
 
 This is a [remark](https://github.com/remarkjs/remark) plugin rebuilt based on remark-denden-ruby(https://www.npmjs.com/package/remark-denden-ruby).
 
+> [!NOTE]
+> version 0.0.6:
+> Aozora Bunko style ruby notation (in part) is now available.
+
 ## Installation
 
 ```sh
@@ -32,7 +36,7 @@ const md2html = (md) => {
 
 const markdown = `
 {双方向散乱分布関数|そうほうこうさんらんぶんぷかんすう}
-※青空文庫《あおぞらぶんこ》風の|ルビ《ふりがな》記法
+※|青空文庫《あおぞらぶんこ》風の|ルビ《ふりがな》記法
 `;
 
 console.log(md2html(markdown));
@@ -50,15 +54,9 @@ The result is:
 </p>
 <p>
   ※
-  <ruby
-    >青空文庫<rp>《</rp><rt>あおぞらぶんこ</rt
-    ><rp>》</rp></ruby
-  >
+  <ruby>青空文庫<rp>《</rp><rt>あおぞらぶんこ</rt><rp>》</rp></ruby>
   風の
-  <ruby
-    >ルビ<rp>《</rp><rt>ふりがな</rt
-    ><rp>》</rp></ruby
-  >
+  <ruby>ルビ<rp>《</rp><rt>ふりがな</rt><rp>》</rp></ruby>
   記法
 </p>
 ```

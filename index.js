@@ -5,21 +5,20 @@
 import { visit } from "unist-util-visit";
 import { u } from "unist-builder";
 
-const rubyRegex =
-  /(?:\{([^\|\}]+)\|([^\|\}]+)(?:\|[^\{\|\}]+)*\})|(?:(?:｜)?([^｜《》\s]+)《([^《》]+)》)/g;
-
 function scanRuby(str) {
   let match;
   let index = 0;
+  const rubyRegex =
+    /(?:\{([^\|\}]+)\|([^\|\}]+)(?:\|[^\{\|\}]+)*\})|(?:(?:｜)?([^｜《》\s]+)《([^《》]+)》)/g;
   const result = [];
 
-  while ((match = rubyRegex.exec(str)) !== null) {
+  while ((match = regex.exec(str)) !== null) {
     result.push(str.substring(index, match.index));
     if (match[1] && match[2]) {
       // {漢字|かんじ}形式の場合
       result.push([match[1], match[2]]);
     } else if (match[3] && match[4]) {
-      // ｜漢字《かんじ》または漢字《かんじ》形式の場合
+      // |漢字《かんじ》形式の場合
       result.push([match[3], match[4]]);
     }
     index = match.index + match[0].length;
