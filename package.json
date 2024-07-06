@@ -1,6 +1,6 @@
 {
   "name": "@nplabo/remark-ruby",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "This is a remark plugin rebuilt based on remark-denden-ruby(https://www.npmjs.com/package/remark-denden-ruby).",
   "type": "module",
   "exports": "./index.js",
@@ -15,9 +15,6 @@
     "build": "rimraf \"*.d.ts\" && tsc",
     "test": "node test.js"
   },
-  "keywords": [
-    "remark"
-  ],
   "author": "NODE PRODUCTIONS (https://www.nodepro.jp)",
   "repository": {
     "url": "https://github.com/node-productions/remark-ruby"

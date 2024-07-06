@@ -5,7 +5,7 @@ This is a [remark](https://github.com/remarkjs/remark) plugin rebuilt based on r
 ## Installation
 
 ```sh
-# Of course you can use npm, yarn or other tools.
+# Of course you can use npm, yarn, pnpm or other tools.
 bun add @nplabo/remark-ruby
 ```
 
@@ -32,6 +32,7 @@ const md2html = (md) => {
 
 const markdown = `
 {双方向散乱分布関数|そうほうこうさんらんぶんぷかんすう}
+※青空文庫《あおぞらぶんこ》風の|ルビ《ふりがな》記法
 `;
 
 console.log(md2html(markdown));
@@ -42,7 +43,23 @@ The result is:
 ```html
 <!-- formatted HTML -->
 <p>
-  <ruby>双方向散乱分布関数<rp>《</rp><rt>そうほうこうさんらんぶんぷかんすう</rt><rp>》</rp></ruby>
+  <ruby
+    >双方向散乱分布関数<rp>《</rp><rt>そうほうこうさんらんぶんぷかんすう</rt
+    ><rp>》</rp></ruby
+  >
+</p>
+<p>
+  ※
+  <ruby
+    >青空文庫<rp>《</rp><rt>あおぞらぶんこ</rt
+    ><rp>》</rp></ruby
+  >
+  風の
+  <ruby
+    >ルビ<rp>《</rp><rt>ふりがな</rt
+    ><rp>》</rp></ruby
+  >
+  記法
 </p>
 ```
 
@@ -52,6 +69,4 @@ Escaping like `\{Info\|Warning\}` is not supported due to **technical reason**. 
 
 ## LICENSE and Copyright
 
-Copyright (c) 2022 fabon.
-
-Released under the MIT License.
+Copyright (c) 2022 fabon. Released under the MIT License.
