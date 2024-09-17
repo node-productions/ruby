@@ -2,15 +2,11 @@
 
 This is a [remark](https://github.com/remarkjs/remark) plugin rebuilt based on remark-denden-ruby(https://www.npmjs.com/package/remark-denden-ruby).
 
-> [!NOTE]
-> version 0.0.7:
-> Aozora Bunko style ruby notation (in part) is now available.
-
 ## Installation
 
 ```sh
 # Of course you can use npm, yarn, pnpm or other tools.
-bun add @nplabo/remark-ruby
+bun add @ndpr/ruby
 ```
 
 ## Usage
@@ -22,7 +18,7 @@ import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
-import remarkRuby from "@nplabo/remark-ruby";
+import remarkRuby from "@ndpr/ruby";
 
 const md2html = (md) => {
   const result = unified()

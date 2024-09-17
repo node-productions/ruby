@@ -1,6 +1,6 @@
 {
-  "name": "@nplabo/remark-ruby",
-  "version": "0.0.7",
+  "name": "@ndpr/ruby",
+  "version": "0.0.1",
   "description": "This is a remark plugin rebuilt based on remark-denden-ruby(https://www.npmjs.com/package/remark-denden-ruby).",
   "type": "module",
   "exports": "./index.js",
@@ -17,7 +17,7 @@
   },
   "author": "NODE PRODUCTIONS (https://www.nodepro.jp)",
   "repository": {
-    "url": "https://github.com/node-productions/remark-ruby"
+    "url": "https://github.com/node-productions/ruby"
   },
   "license": "MIT",
   "devDependencies": {
