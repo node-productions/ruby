@@ -1,4 +1,4 @@
-# @nplabo/remark-ruby
+# @ndpr/ruby
 
 This is a [remark](https://github.com/remarkjs/remark) plugin rebuilt based on remark-denden-ruby(https://www.npmjs.com/package/remark-denden-ruby).
 
